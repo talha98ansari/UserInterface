@@ -1,0 +1,379 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike,strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+  margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+  @import '../fonts/fonts.css';
+  body{font-family: 'Jost', sans-serif;}
+.lucky{
+  font-family: 'Luckiest Guy',sans-serif;
+}
+  .bck_black{
+    background-color: black !important;
+    color: white !important;
+  }
+  .color_grey{
+  color: #aeb4b4;
+}
+.color_greyl{
+  color: #949494;
+}
+.color_gray{
+  color: #a0a0a0;
+}
+h1{
+  font-size: 60px;
+}
+h3{
+  font-size: 30px;
+}
+h4{
+  font-size: 22px;
+}
+h5{
+  font-size: 40px;
+}
+h6{
+  font-size: 28px;
+}
+.p_bg{
+  font-size: 20px;
+}
+p{
+  font-size: 16px !important;
+  line-height: 1.5;
+}
+.p_md{
+  font-size: 17px !important;
+}
+.p_sm{
+  font-size: 15px !important;
+  font-weight: 300;
+}
+.medium{
+  font-weight: 500;
+}
+.bold{
+  font-weight: 700;
+}
+.black{
+  font-weight: 900;
+}
+.regular{
+  font-weight: 300;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.capatalize{
+  text-transform: capitalize;
+}
+.italic{
+  font-style: italic;
+}
+.pad-70{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.pad-90{
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.pad-b90{
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+.color_red{
+  color: #ee343a !important;
+}
+a button{
+  background-color: #ec1c23 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 50px !important;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  transition: ease-in-out .2s;
+}
+a button:hover{
+  background-color: #ffd55e !important;
+  color: black !important;
+}
+/* ====================================== Header ================================================ */
+.logo-1{
+  visibility: hidden;
+}
+.navbar-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+}
+nav a{
+  color: black !important;
+
+}
+.logo-2 a:hover{
+  background-color: transparent !important;
+  padding: 3px 8px 0px 8px !important;
+}
+.navbar-nav .active>a, nav a:hover{
+  color: white !important;
+  background-color: #ec1c23;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+/* ====================================== Banner ================================================ */
+.banner .carousel-caption{
+  top: 50%;
+  bottom: initial;
+  transform: translateY(-50%);
+}
+.banner .carousel-indicators{
+  position: absolute !important;
+  bottom: 100px !important;
+  z-index: 9999;
+}
+.banner .carousel-indicators li{
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.banner .carousel-indicators .active{
+  height: 15px !important;
+  width: 15px !important;
+  margin-top: -3px;
+}
+.banner p, .company p{
+  width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner .carousel-caption h5, .company h5{
+  position: relative;
+}
+.banner .carousel-caption h5:before, .company h5::before {
+  content: "";
+  width: 15%;
+  height: 1px;
+  background-image: url('../images/line.png');
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  margin-left: -17%;
+  }
+  .banner .carousel-caption h5:after, .company h5::after {
+    content: "";
+    width: 15%;
+    height: 1px;
+    background-image: url('../images/line.png');
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    margin-left: 1%;
+    }
+    /* ====================================== About Section ================================================ */
+  .about .active{
+    background-color: #ffd55e !important;
+    color: black !important;
+  }  
+/* ====================================== Company ================================================ */
+.company{
+  background-image: url('../images/background-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-top: 180px !important;
+  padding-bottom: 180px !important;
+}
+.company h5::before {
+  width: 5%;
+  height: 1px;
+  margin-left: -6%;
+  }
+.company h5::after {
+  width: 5%;
+  height: 1px;
+  }
+/* ====================================== Featured ================================================ */
+.card_image{
+  width: 265px;
+  height: 310px;
+  text-align: center;
+  background-color: #f6f4f4;
+  padding: 50px !important;
+}
+.card_image-sm{
+  background-color: #f6f4f4;
+  padding: 80px 30px !important;
+  height: 100%;
+  width: 100%;
+}
+.card_image-md{
+  background-color: #f6f4f4;
+  padding: 50px 30px !important;
+  height: 100%;
+  width: 100%;
+}
+/* ====================================== Testimonials ================================================ */
+.testimonials{
+  background-color: #f1f3f4;
+  text-align: center;
+}
+.testimonials img{
+  width: 40px !important;
+}
+.testimonials .owl-dots{
+  margin-top: 30px !important;
+}
+.testimonials .active span{
+  background-color: #ec1c23 !important;
+}
+.testimonials span{
+  background-color: #333333 !important;
+}
+/* ====================================== Subscribe ================================================ */
+.subscribe{
+  background-image: url('../images/background-2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  color: white;
+}
+.subscribe .input-group{
+  width: 600px;
+  height: 60px;
+}
+.subscribe input{
+  border-radius: 50px 0 0 50px !important;
+  border-left: 0 !important;
+  padding-left: 20px !important;
+}
+.subscribe button{
+  border-radius: 50px !important;
+  margin-left: -50px;
+  background-color: black !important;
+  color: white;
+  font-size: 14px;
+}
+.subscribe button:hover{
+  color: white !important;
+  background-color: #ff2d32 !important;
+  border: 1px solid white !important;
+}
+/* ====================================== Footer ================================================ */
+.circle{
+  width: 50px;
+  height: 50px;
+  color: #ff2d32;
+  background-color: white;
+  border-radius: 100%;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px !important;
+  padding-top: 12px;
+  transition: ease-in-out .2s;
+  cursor: pointer;
+  box-shadow: 0 4px 35px rgba(0,0,0,.2);
+}
+.circle:hover{
+  background-color: #ff2d32;
+  color: white;
+
+}
+/* ====================================== Bottom ================================================ */ 
+.bottom{
+  background-image: url('../images/bottom.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+/* ====================================== Media Queries ================================================ */ 
+@media screen and (max-width:1200px){
+  .banner .carousel-indicators{
+    bottom: 40px !important;
+  }
+  .card_image{
+    width: 220px !important;
+    height: 290px;
+  }
+  .subscribe .input-group{
+    width: 500px;
+  }
+}
+@media screen and (max-width:992px){
+  .logo-1{
+    visibility: visible;
+  }
+  .logo-2{
+    display: none;
+  }
+  .navbar-nav{
+    display: block;
+  } 
+  .banner .carousel-indicators{
+    display: none;
+  }
+  .banner h1{
+    font-size: 40px;
+  }
+  .banner h5{
+    font-size: 28px;
+  }
+  .banner p, .company p{
+    width: 100%;
+  }
+  .card_image{
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media screen and (max-width:768px){
+  .banner h1{
+    font-size: 30px;
+  }
+  .banner h5{
+    font-size: 20px;
+  }
+  .banner .p_sm{
+    font-size: 12px !important;
+  }
+  .subscribe .input-group{
+    width: 100%;
+  }
+  h1{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 24px;
+  }
+  h5{
+    font-size: 27px !important;
+  }
+  .pad-90{
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .pad-70{
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .company{
+    padding-top: 0px !important;
+    padding-bottom: 5px !important;
+  }
+  .company_inner{
+    margin-top: 0 !important;
+  }
+}
+@media screen and (max-width:576px){
+  .banner .carousel-item img{
+    height: 300px;
+  }
+  .subscribe button{
+    margin-left: -50px;
+    font-size: 10px;
+    padding: 20px !important;
+  }
+}
+
